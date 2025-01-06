@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=M%20PLUS%202:700|M%20PLUS%202:400');
+
+html {
+    --text: #f3f3f4;
+    --background: #1f1f22;
+    --primary: #a7a6c4;
+    --secondary: #dedcff;
+    --accent: #433bff;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'M PLUS 2';
+    font-weight: 400;
+    background-color: var(--background);
+    color: var(--text);
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'M PLUS 2';
+    font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 8.870rem; /* 141.92px */}
+
+h2 {font-size: 5.482rem; /* 87.68px */}
+
+h3 {font-size: 3.388rem; /* 54.24px */}
+
+h4 {font-size: 2.094rem; /* 33.44px */}
+
+h5 {font-size: 1.294rem; /* 20.64px */}
+
+small {font-size: 0.494rem; /* 7.84px */}
+
+
+.hero-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+}
+
+#section-001 {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-002 {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.quote {
+    text-align: end;
+}
+
+.quote-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.generate-quote-button {
+    font-size: 1rem;
+    font-family: 'M PLUS 2';
+    font-weight: 700;
+    background-color: var(--text);
+    color: var(--background);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px
+}
+
+.generate-quote-button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
